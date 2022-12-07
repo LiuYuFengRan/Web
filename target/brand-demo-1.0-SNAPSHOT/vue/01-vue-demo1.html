@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+<!--  输入框内容发生变化，则模型的内容发生变化，实现双向绑定-->
+  <input v-model="username">
+  <!--插值表达式-->
+  {{username}}
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  //1.创建vue核心对象
+  new Vue({
+    el:"#app",
+    data(){
+      return{
+        username:""
+      }
+    }
+
+   /* data:function(){
+      return{
+        username:""
+      }
+    }*/
+  })
+</script>
+</body>
+</html>
